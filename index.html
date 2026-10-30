@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTROFIT | Tu transformación empieza hoy</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js" defer>
+    </script>
+</head>
+
+<body> 
+<!-- 1. ENCABEZADO: Navegación principal -->
+    <header class="encabezado" id="inicio">
+        <div class="contenedor barra">
+            <!-- Logo / Nombre del sitio -->
+            <a href="#inicio" class="marca">
+                <span class="marca-icono">⚡</span>
+                <span>ASTROFIT<small>Bienvenido al lugar donde el cuerpo se cansa pero la mente descansa.</small></span>
+            </a>
+
+            <!-- Menú de navegación interna -->
+            <nav class="menu" aria-label="Menú principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#instalaciones">Instalaciones</a>
+                <a href="#rutinas">Rutinas</a>
+                <a href="#planes">Planes</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <!-- Botón de llamada a la acción (CTA) -->
+            <a class="boton boton-destacado menu-cta" href="#contacto">Unirme ahora</a>
+        </div>
+    </header>
+    <!-- 2. HERO: Sección de bienvenida / Portada -->
+    <section class="hero" aria-labelledby="titulo-principal">
+        <div class="contenedor hero-contenido">
+            <p class="etiqueta clara">CENTRO DE ENTRENAMIENTO EXCLUSIVO</p>
+            <h1 id="titulo-principal">ASTROFIT <span>Tu transformación empieza hoy</span></h1>
+            <p class="hero-descripcion">
+                Equipamiento de primer nivel, ambiente nocturno exclusivo y las mejores instalaciones para llevar tu físico al siguiente nivel.
+            </p>
+            <div class="acciones">
+                <a href="#rutinas" class="boton boton-destacado">Ver entrenamientos</a>
+                <a href="#instalaciones" class="boton boton-borde">Conocer el gym</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. INSTALACIONES: Presentación del equipamiento del gimnasio -->
+    <section class="seccion instalaciones" id="instalaciones">
+        <div class="contenedor">
+            <p class="etiqueta">NUESTRO ESPACIO</p>
+            <div class="titulo-fila">
+                <h2>Instalaciones de Primer Nivel</h2>
+                <p>Equipamiento moderno, amplio espacio con espejos, zona de peso libre y las mejores máquinas del mercado.</p>
+            </div>
+
+            <div class="galeria-principal">
+                <figure class="tarjeta-instalacion">
+                    <img src="img/portada.jpg" alt="Vista general del gimnasio iluminado de noche con máquinas de peso libre y poleas">
+                    <figcaption>Área principal de entrenamiento y peso libre</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- 4. RUTINAS: Sección temática con las 4 imágenes requeridas -->
+    <section class="seccion rutinas" id="rutinas">
+        <div class="contenedor">
+            <p class="etiqueta">ZONAS DE ENTRENAMIENTO</p>
+            <div class="titulo-fila">
+                <h2>Nuestras Áreas de Entrenamiento</h2>
+                <p>Contamos con equipos específicos para cada grupo muscular, diseñados para maximizar tu rendimiento.</p>
+            </div>
+
+            <div class="tarjetas">
+                <!-- Tarjeta 1: Pecho -->
+                <article class="tarjeta">
+                    <img src="img/pecho.jpg" alt="Atleta realizando press de banca con barra en zona de pecho">
+                    <div class="tarjeta-contenido">
+                        <h3>Zona de Pecho</h3>
+                        <p>Bancos planos, inclinados y declinados equipados con barras olímpicas y mancuernas de alto pesaje.</p>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2: Espalda -->
+                <article class="tarjeta">
+                    <img src="img/espalda.jpg" alt="Atleta ejecutando jalón al pecho en máquina de poleas para espalda">
+                    <div class="tarjeta-contenido">
+                        <h3>Zona de Espalda</h3>
+                        <p>Estaciones de jalón, remo con barra y poleas ajustables para un trabajo completo de dorsal.</p>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3: Pierna -->
+                <article class="tarjeta">
+                    <img src="img/pierna.jpg" alt="Atleta realizando sentadilla libre con barra olímpica">
+                    <div class="tarjeta-contenido">
+                        <h3>Zona de Pierna</h3>
+                        <p>Racks de sentadilla, prensas inclinadas, máquinas hack y extensiones de cuadríceps.</p>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4: Brazo -->
+                <article class="tarjeta">
+                    <img src="img/brazo.jpg" alt="Atleta haciendo curl de bíceps con barra Z en zona de peso libre">
+                    <div class="tarjeta-contenido">
+                        <h3>Zona de Brazos(Incluidos antebrazo, trapecio, hombro)</h3>
+                        <p>Set completo de barras Z, bancos Scott y estaciones de poleas para bíceps y tríceps.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PLANES Y BENEFICIOS -->
+    <section class="seccion servicios" id="planes">
+        <div class="contenedor">
+            <p class="etiqueta">¿POR QUÉ ELEGIRNOS?</p>
+            <h2>Beneficios de Entrenar en ASTROFIT</h2>
+            <ul class="lista-beneficios">
+                <li>Acceso ilimitado a todas nuestras instalaciones.</li>
+                <li>Asesoría personalizada con entrenadores certificados.</li>
+                <li>Área de vestidores, duchas y casilleros seguros.</li>
+                <li>Ambiente nocturno climatizado e iluminación diseñada para el enfoque mental.</li>
+            </ul>
+            <p class="nota">
+                Para conocer más sobre los beneficios del entrenamiento de fuerza, puedes consultar la 
+                <a href="https://www.mayoclinic.org" target="_blank" rel="noopener noreferrer">guía sobre ejercicio físico de Mayo Clinic</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- 6. CONTACTO: Formulario opcional para la demostración -->
+    <section class="cierre" id="contacto">
+        <div class="contacto">
+            <p class="etiqueta">ÚNETE A ASTROFIT</p>
+            <h2>Consulta tu membresía</h2>
+            <p>Completa el formulario y nos pondremos en contacto contigo para tu primera sesión de prueba.</p>
+            <form id="formulario" novalidate>
+                <div class="campos">
+                    <label>Tu nombre
+                        <input id="nombre" type="text" placeholder="Escribe tu nombre" required>
+                    </label>
+                    <label>Tu correo electrónico
+                        <input id="correo" type="email" placeholder="nombre@ejemplo.com" required>
+                    </label>
+                </div>
+                <label>Objetivo de entrenamiento
+                    <select id="tipo" required>
+                        <option value="">Selecciona tu objetivo principal</option>
+                        <option>Ganancia muscular</option>
+                        <option>Pérdida de grasa</option>
+                        <option>Acondicionamiento físico</option>
+                    </select>
+                </label>
+                <button type="submit" class="boton boton-destacado boton-enviar">Solicitar información</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 7. PIE DE PÁGINA -->
+    <footer class="pie">
+        <div class="contenedor pie-fila">
+            <div class="marca marca-pie">
+                <span class="marca-icono">⚡</span>
+                <span>ASTROFIT<small>Bienvenido al lugar donde el cuerpo se cansa pero la mente descansa.</small></span>
+            </div>
+            <p>Taller Yurath · Desarrollo de Software II</p>
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
+    </footer>
+
+</body>

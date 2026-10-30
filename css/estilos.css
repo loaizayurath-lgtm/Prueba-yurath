@@ -1,0 +1,464 @@
+/* ASTROFIT - Hoja de Estilos Neón Gym */
+
+:root {
+    --negro-gym: #0b0d10;
+    --carbon-oscuro: #161a20;
+    --carbon-tarjeta: #1e232d;
+    --rojo-neon: #ff2a2a;
+    --rojo-hover: #d61c1c;
+    --gris-borde: #2a313d;
+    --texto-claro: #f1f5f9;
+    --texto-suave: #94a3b8;
+    --blanco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--texto-claro);
+    background: var(--negro-gym);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+.contenedor {
+    width: min(1150px, 92%);
+    margin: auto;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    letter-spacing: .5px;
+}
+
+h2 {
+    font-size: clamp(28px, 3vw, 39px);
+    line-height: 1.12;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+/* ETIQUETAS Y BOTONES */
+.etiqueta {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--rojo-neon);
+    margin-bottom: 12px;
+}
+
+.etiqueta.clara {
+    color: var(--rojo-neon);
+}
+
+.boton {
+    display: inline-block;
+    border: 0;
+    border-radius: 4px;
+    padding: 13px 22px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform .2s, background .2s, box-shadow .2s;
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+}
+
+.boton-destacado {
+    background: var(--rojo-neon);
+    color: var(--blanco);
+    box-shadow: 0 4px 15px rgba(255, 42, 42, 0.4);
+}
+
+.boton-destacado:hover {
+    background: var(--rojo-hover);
+    box-shadow: 0 6px 20px rgba(255, 42, 42, 0.6);
+}
+
+.boton-borde {
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    background: transparent;
+}
+
+.boton-borde:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 1. ENCABEZADO (Header oscuro) */
+.encabezado {
+    background: var(--carbon-oscuro);
+    border-bottom: 2px solid var(--rojo-neon);
+}
+
+.barra {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--blanco);
+    letter-spacing: 1.5px;
+}
+
+.marca small {
+    display: block;
+    font: 8px system-ui, sans-serif;
+    letter-spacing: 1.5px;
+    margin-top: 2px;
+    color: var(--texto-suave);
+}
+
+.marca-icono {
+    color: var(--rojo-neon);
+    font-size: 28px;
+}
+
+.menu {
+    display: flex;
+    gap: 22px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: var(--rojo-neon);
+}
+
+/* 2. HERO / PORTADA */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    background: linear-gradient(90deg, rgba(11, 13, 16, 0.95) 0%, rgba(11, 13, 16, 0.75) 50%, rgba(11, 13, 16, 0.3) 100%), 
+                url('../img/portada.jpg') center / cover no-repeat;
+}
+
+.hero-contenido {
+    padding: 72px 0;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 7vw, 90px);
+    line-height: .95;
+    max-width: 650px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    display: block;
+    font-size: clamp(22px, 3.5vw, 38px);
+    line-height: 1.1;
+    margin-top: 12px;
+    color: var(--texto-suave);
+    text-transform: none;
+    font-weight: 400;
+}
+
+.hero-descripcion {
+    max-width: 480px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: var(--texto-suave);
+}
+
+.acciones {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+/* SECCIONES EN GENERAL */
+.seccion {
+    padding: 65px 0;
+}
+
+.titulo-fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titulo-fila h2 {
+    margin-bottom: 0;
+}
+
+.titulo-fila p {
+    max-width: 380px;
+    color: var(--texto-suave);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* 3. INSTALACIONES */
+.tarjeta-instalacion {
+    margin: 0;
+    background: var(--carbon-tarjeta);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--gris-borde);
+}
+
+.tarjeta-instalacion img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+.tarjeta-instalacion figcaption {
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--blanco);
+    background: var(--carbon-tarjeta);
+    border-top: 2px solid var(--rojo-neon);
+}
+
+/* 4. RUTINAS (Tarjetas estilo Gym) */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background: var(--carbon-tarjeta);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--gris-borde);
+    transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    border-color: var(--rojo-neon);
+    box-shadow: 0 10px 25px rgba(255, 42, 42, 0.2);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 18px;
+}
+
+.tarjeta h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--blanco);
+}
+
+.tarjeta p {
+    font-size: 13px;
+    color: var(--texto-suave);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* 5. PLANES Y BENEFICIOS */
+.servicios {
+    background: var(--carbon-oscuro);
+    border-top: 1px solid var(--gris-borde);
+    border-bottom: 1px solid var(--gris-borde);
+}
+
+.lista-beneficios {
+    padding-left: 20px;
+    line-height: 1.9;
+    font-size: 15px;
+    color: var(--texto-claro);
+}
+
+.lista-beneficios li::marker {
+    color: var(--rojo-neon);
+}
+
+.lista-beneficios li {
+    margin-bottom: 8px;
+}
+
+.nota {
+    font-size: 12px;
+    color: var(--texto-suave);
+    margin-top: 25px;
+}
+
+.nota a {
+    color: var(--rojo-neon);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 6. CONTACTO Y FORMULARIO */
+.cierre {
+    background: var(--negro-gym);
+}
+
+.contacto {
+    padding: 55px clamp(22px, 5vw, 75px);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    margin-bottom: 8px;
+}
+
+.contacto > p:not(.etiqueta) {
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+form label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin: 16px 0 6px;
+    color: var(--texto-claro);
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--gris-borde);
+    border-radius: 4px;
+    background: var(--carbon-oscuro);
+    color: var(--blanco);
+}
+
+input:focus, select:focus {
+    outline: 2px solid var(--rojo-neon);
+    outline-offset: 1px;
+}
+
+.boton-enviar {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* 7. PIE DE PÁGINA */
+.pie {
+    background: var(--carbon-oscuro);
+    color: var(--blanco);
+    padding: 25px 0;
+    border-top: 2px solid var(--rojo-neon);
+}
+
+.pie-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.marca-pie small {
+    color: var(--texto-suave);
+}
+
+.pie p, .pie a {
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+.pie a:hover {
+    color: var(--rojo-neon);
+}
+
+/* RESPONSIVO */
+@media (max-width: 990px) {
+    .tarjetas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-cta {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .barra {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .hero {
+        min-height: 440px;
+    }
+    .hero-contenido {
+        padding: 55px 0;
+    }
+    .titulo-fila {
+        display: block;
+    }
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+    .campos {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .pie-fila {
+        flex-direction: column;
+        text-align: center;
+    }
+}
